@@ -61,4 +61,26 @@ poetry add djangorestframework
 - python manage.py startapp _app_name
 ```
 
+go to setting then INSTALLED_APPS and add the following
+
+```
+'rest_framework',
+#app name
+'_app_name',
+```
+add the following to seeting.py 
+
+```
+# Django REST framework
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+```
+
+| Syntax | Description |
+| ----------- | ----------- |
+| views |  [click here](readme_pages/views) |
+| serializers | [click here](readme_pages/serializers) |
 

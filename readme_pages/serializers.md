@@ -12,7 +12,7 @@ from .models import Post
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         #fields it is the names of the model 
-        fields = ['title','author','updated','timestamp','content']
+        fields = ['tittle','author','updated','timestamp','content']
         ##model it is the name of the table(model)
         model = Post
 
