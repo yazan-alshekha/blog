@@ -24,7 +24,7 @@ class PosteList(generics.ListCreateAPIView):
     # the name of the Serializer you made
     serializer_class=PostSerializer
     # add permission to the view 
-    permission_classes=(testAuthenticated,)
+    permission_class=(testAuthenticated,)
 
 # detail view
 #RetrieveAPIView >-- just to read for one item
@@ -35,4 +35,4 @@ class PosteDetial(generics.RetrieveUpdateDestroyAPIView):
     # the name of the Serializer you made
     serializer_class=PostSerializer
     # add permission to the view 
-    permission_classes=(testAuthenticated,)
+    permission_class=(testAuthenticated,)
